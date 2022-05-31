@@ -44,10 +44,17 @@ const questions = [
     },   
     {
         type: "input",
-        name: "githubusername",
-        message: "Enter your Github Username"
-
-    }
+        name: "link",
+        message: "Enter your Github Username",
+        validate: nameInput => {
+            if (nameInput) {
+                return true;
+            } else {
+                console.log ("Please enter your Github link!")
+                return false;
+        }
+        }
+    },
 ];
 
 // TODO: Create a function to write README file

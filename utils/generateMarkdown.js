@@ -20,7 +20,7 @@ function generateMarkdown(data) {
   ${data.usageinformation}
   ${data.contributingguidelines}
   ${data.testinstructions}
-  ${data.githubusername}
+  ${data.link}
 `;
 }
 
